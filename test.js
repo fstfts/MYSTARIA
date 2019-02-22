@@ -1,5 +1,5 @@
 const prefix = "*"
-const token = "NTAwMzU3NDM5MDg2OTE5Njkz.D01mwQ.lwN-sa3pXb_WypiUWJJh7ZfXFdk"
+const token =  process.env.token;
 const Discord = require("discord.js");
 const fs =  require("fs")
 const bot = new Discord.Client();
@@ -31,4 +31,4 @@ if(message.content.startsWith(prefix + "boss")) {
 
 
 
-bot.login('NTAwMzU3NDM5MDg2OTE5Njkz.D01mwQ.lwN-sa3pXb_WypiUWJJh7ZfXFdk')
+bot.login(token)
